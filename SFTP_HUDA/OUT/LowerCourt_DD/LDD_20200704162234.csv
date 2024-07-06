@@ -1,0 +1,5 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,600.00,NIDHjI,DELHI,0540,,,,,,,QD236DF3A2B0,,,,,,,,,,,200999095333,10-05-19
+C,D,Sector45-895,Rwari-Punjab,25-485,11-07-06,31-105,07-09-11,,,,,,QD236DF3A2B0,Priya Gnkar-Yugal,EASPS6943C,1000.00,400.00,600.00,E,,,,,,
+P,D,10538451,500.00,iASHISH,PANCHKULA,0005,,,,,,,Q6CF1C5C917A,,,,,,,,,,,200999095333,10-05-19
+C,D,Sector45-795,Dlhi-Kerla,59-152,11-07-07,49-152,07-11-12,,,,,,Q6CF1C5C917A,Nitin Sha-Meeta,AUNPS3864M,1000.00,500.00,500.00,N,,,,,,

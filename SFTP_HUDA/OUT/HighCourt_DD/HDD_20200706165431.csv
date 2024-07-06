@@ -1,0 +1,3 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,5000.00,Ashitaa,HISSAR,005,,,,,,,R1F2CF6EF76A,,,,,,,,,,,200999095333,10-05-19
+C,D,45-896,DADA-PAREL,25-476,11-07-06,31-74-67,07-09-11,6-7-4-7,29/01/2016,,,,R1F2CF6EF76A,Priya GaonkarL,EASPS6943C,7000.00,2000.00,5000.00,N,,,,,,

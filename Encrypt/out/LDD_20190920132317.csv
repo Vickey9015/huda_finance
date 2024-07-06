@@ -1,0 +1,5 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,12076.00,ADDITION DISTRICT JUDGE YAMUNANAGAR,JAGADHRI (YAMUNANAGAR),005,,,,,,,Q099CE13B0D3,,,,,,,,,,,201002048117,17-09-19
+C,D,18,GOBINDPURA,13,26.02.2004,56/2006,18.11.2009,,,,,,Q099CE13B0D3,AMRIT LAL,,13982.00,1906.00,12076.00,N,,,,,,
+P,D,10538451,5764544.00,ADJ FBD.,FARIDABAD,0283,,,,,,,Q515EC2FB382,,,,,,,,,,,201002015201,19-09-19
+C,D,44-47,M.M. Pur,9,08-02-95,251/07,20-03-15,,,,,,Q515EC2FB382,ADJ FBD.,0,5764544.00,0.00,5764544.00,N,,,,,,

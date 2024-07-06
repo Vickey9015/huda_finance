@@ -1,0 +1,387 @@
+{
+"swagger":"2.0",
+"info":{
+"description":"This is a multitv server Petstore server." ,
+"version":"1.0.0",
+"title":"Multitv API",
+"termsOfService":"http://multitvsolution.com/",
+"contact":{
+"email":"apiteam@multitvsolution.com"
+},
+"license":{
+"name":"Apache 2.0",
+"url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+}
+},
+"host":"multitvsolution.com",
+"basePath":"/multitvfinal/api",
+"tags":[
+        {
+        "name":"user",
+        "description":"Access to User orders",
+        "externalDocs":{
+        "description":"Find out more about our store",
+        "url":"http://swagger.io"
+        }
+       }
+      ],
+"schemes":[
+"http"
+],
+"paths":{
+"/user":{
+"post":{
+"tags":[
+"user"
+],
+"summary":"Edit Profile",
+"description":"This can only be done by the logged in user.",
+"operationId":"editProfile",
+"produces":[
+"application/xml",
+"application/json"
+],
+"parameters":[
+{
+    "name":"firstname",
+    "in":"path",
+    "description":"The First name that needs to be edit. ",
+    "required":true,
+    "type":"string"
+},
+{
+    "name":"lastname",
+    "in":"path",
+    "description":"The lastname name that needs to be edit. ",
+    "required":true,
+    "type":"string"
+},
+{
+    "name":"phone",
+    "in":"path",
+    "description":"The phone number that needs to be edit. ",
+    "required":true,
+    "type":"string"
+},{
+    "name":"pic",
+    "in":"path",
+    "description":"The pic (profile Picture) that need to be edit. ",
+    "required":true,
+    "type":"string"
+}
+
+],
+"responses":{
+"default":{
+"description":"successful operation"
+}
+}
+}
+},
+"/user/login":{
+    "post":{
+    "tags":[
+        "user"
+        ],
+    "summary":"Logs user into the system",
+    "description":"",
+    "operationId":"loginUser",
+    "produces":[
+        "application/xml",
+        "application/json"
+        ],
+    "parameters":[
+        {
+        "name":"email",
+        "in":"query",
+        "description":"The email for login",
+        "required":false,
+        "type":"string"
+        },
+        {
+        "name":"password",
+        "in":"query",
+        "description":"The password for login in system",
+        "required":false,
+        "type":"string"
+        }
+    ],
+    "responses":{
+        "200":{
+        "description":"successful operation",
+        "schema":{
+        "type":"string"
+        },
+        "headers":{
+            "X-Rate-Limit":{
+            "type":"integer",
+            "format":"int32",
+            "description":"calls per hour allowed by the user"
+            },
+            "X-Expires-After":{
+            "type":"string",
+            "format":"date-time",
+            "description":"date in UTC when toekn expires"
+            }
+        }
+        },
+            "400":{
+            "description":"Invalid username/password supplied"
+            }
+        }
+    }
+},
+    "/user/logout":{
+    "get":{
+    "tags":[
+    "user"
+    ],
+    "summary":"Logs out current logged in user session",
+    "description":"",
+    "operationId":"logoutUser",
+    "produces":[
+    "application/xml",
+    "application/json"
+    ],
+    "parameters":[
+    ],
+    "responses":{
+    "default":{
+    "description":"successful operation"
+    }
+    }
+    }
+},
+"/user/social":{
+"post":{
+"tags":[
+"user"
+],
+"summary":"Login With Social Media",
+"description":"",
+"operationId":"loginWithSocialMedia",
+"produces":[
+"application/xml",
+"application/json"
+],
+"parameters":[
+{
+"name":"provider",
+"in":"path",
+"description":"Social Media provider. ",
+"required":true,
+"type":"string"
+},
+{
+"name":"social",
+"in":"path",
+"description":"response array from social media. ",
+"required":true,
+"type":"string"
+}
+],
+"responses":{
+"200":{
+"description":"successful operation",
+"schema":{
+"$ref":"#/definitions/User"
+}
+},
+"400":{
+"description":"Invalid username supplied"
+},
+"404":{
+"description":"User not found"
+}
+}
+}
+}
+},
+"securityDefinitions":{
+"petstore_auth":{
+"type":"oauth2",
+"authorizationUrl":"http://petstore.swagger.io/api/oauth/dialog",
+"flow":"implicit",
+"scopes":{
+"write:pets":"modify pets in your account",
+"read:pets":"read your pets"
+}
+},
+"api_key":{
+"type":"apiKey",
+"name":"api_key",
+"in":"header"
+}
+},
+"definitions":{
+"Order":{
+"properties":{
+"id":{
+"type":"integer",
+"format":"int64"
+},
+"petId":{
+"type":"integer",
+"format":"int64"
+},
+"quantity":{
+"type":"integer",
+"format":"int32"
+},
+"shipDate":{
+"type":"string",
+"format":"date-time"
+},
+"status":{
+"type":"string",
+"description":"Order Status",
+"enum":[
+"placed",
+"approved",
+"delivered"
+]
+},
+"complete":{
+"type":"boolean"
+}
+},
+"xml":{
+"name":"Order"
+}
+},
+"Category":{
+"properties":{
+"id":{
+"type":"integer",
+"format":"int64"
+},
+"name":{
+"type":"string"
+}
+},
+"xml":{
+"name":"Category"
+}
+},
+"User":{
+"properties":{
+"id":{
+"type":"integer",
+"format":"int64"
+},
+"username":{
+"type":"string"
+},
+"firstName":{
+"type":"string"
+},
+"lastName":{
+"type":"string"
+},
+"email":{
+"type":"string"
+},
+"password":{
+"type":"string"
+},
+"phone":{
+"type":"string"
+},
+"userStatus":{
+"type":"integer",
+"format":"int32",
+"description":"User Status"
+}
+},
+"xml":{
+"name":"User"
+}
+},
+"Tag":{
+"properties":{
+"id":{
+"type":"integer",
+"format":"int64"
+},
+"name":{
+"type":"string"
+}
+},
+"xml":{
+"name":"Tag"
+}
+},
+"Pet":{
+"required":[
+"name",
+"photoUrls"
+],
+"properties":{
+"id":{
+"type":"integer",
+"format":"int64"
+},
+"category":{
+"$ref":"#/definitions/Category"
+},
+"name":{
+"type":"string",
+"example":"doggie"
+},
+"photoUrls":{
+"type":"array",
+"xml":{
+"name":"photoUrl",
+"wrapped":true
+},
+"items":{
+"type":"string"
+}
+},
+"tags":{
+"type":"array",
+"xml":{
+"name":"tag",
+"wrapped":true
+},
+"items":{
+"$ref":"#/definitions/Tag"
+}
+},
+"status":{
+"type":"string",
+"description":"pet status in the store",
+"enum":[
+"available",
+"pending",
+"sold"
+]
+}
+},
+"xml":{
+"name":"Pet"
+}
+},
+"ApiResponse":{
+"properties":{
+"code":{
+"type":"integer",
+"format":"int32"
+},
+"type":{
+"type":"string"
+},
+"message":{
+"type":"string"
+}
+},
+"xml":{
+"name":"##default"
+}
+}
+},
+"externalDocs":{
+"description":"Find out more about Swagger",
+"url":"http://swagger.io"
+}
+}

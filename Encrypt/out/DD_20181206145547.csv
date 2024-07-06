@@ -1,0 +1,21 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D202CAB9C4B4,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D202CAB9C4B4,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,9000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D5351ABEA596,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D5351ABEA596,Priya Gaonkar,EASPS6943C,10000.00,1000.00,9000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D579FA9266DC,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D579FA9266DC,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D943AAE56946,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D943AAE56946,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,10000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D9EAB893B40C,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D9EAB893B40C,Priya Gaonkar,EASPS6943C,11000.00,1000.00,10000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,DC31A196A517,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,DC31A196A517,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D6F696B0A31E,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D6F696B0A31E,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D9F4CFA52090,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D9F4CFA52090,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,4000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D481FE70F73F,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D481FE70F73F,Priya Gaonkar,EASPS6943C,5000.00,1000.00,4000.00,N,,,,,200999095333,06-12-18
+P,DD,10538451,6000.00,Priya Gaonkar,Mumbai,0006,,,,,,,D4FFFC35521D,,,,,,,,,,,Supreme Court - order Order No 11111,06-12-18
+C,DD,Sector-6&7,Rewari,25,07/12/2006,31,09/02/2011,6,29/01/2016,18231-18323,03/10/2016,,D4FFFC35521D,Priya Gaonkar,EASPS6943C,7000.00,1000.00,6000.00,N,,,,,200999095333,06-12-18

@@ -1,0 +1,24 @@
+{
+    "c": "1.0.0",
+    "info": 'multitv',
+    "apis": [
+        {
+            "b": "Application Operations",
+            "description": "Application Operations",
+            "path": "http://54.179.170.143/multitvfinal/api/user/login"
+        },
+        {
+            "b": "Machine Level Current Statistics",
+            "description": "Machine Level Current Statistics",
+            "path": "http://54.179.170.143/multitvfinal/api/user/social"
+        },
+        {
+            "b": "Machine Level Historic Statistics",
+            "description": "Machine Level Historic Statistics",
+            "path": "http://54.179.170.143/multitvfinal/api/user/add"
+        },
+    ],
+    "authorizations": null,
+    "swaggerVersion": "1.2",
+    "apiVersion": "1.0.0"
+}

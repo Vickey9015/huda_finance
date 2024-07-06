@@ -1,0 +1,33 @@
+Original Annexure
+
+is_EDC+award_no+annexure_type+account_number+sector_no+award_date
+
+Lower Court Annexure
+
+is_EDC+award_no+annexure_type+account_number+sector_no+award_date+ADJ_court_order_no
+
+High Court Annexure
+
+is_EDC+award_no+annexure_type+account_number+sector_no+award_date+ADJ_court_order_no+high_court_order_no
+
+Supreme Court Annexure
+
+is_EDC+award_no+annexure_type+account_number+sector_no+award_date+ADJ_court_order_no+high_court_order_no+supreme_court_order_no
+
+
+Supreme Court DD Annexure 
+
+is_EDC+award_no+gross_amount_to_paid+beneficiary_name+annexure_type+account_number+award_date+TDS_deducted+ADJ_court_order_no+ADJ_court_decision_date+high_court_order_no+high_court_decision_date+supreme_court_order_no+supreme_court_decision_date
+
+Original DD Annexure
+
+is_EDC+award_no+annexure_type+gross_amount_to_paid+award_date+beneficiary_name
+
+
+Lower Court DD Annexure
+
+is_EDC+award_no+annexure_type+gross_amount_to_paid+award_date+beneficiary_name+TDS_deducted+ADJ_court_order_no+ADJ_court_decision_date
+	
+High Court DD Annexure
+
+is_EDC+award_no+gross_amount_to_paid+annexure_type+account_number+sector_no+award_date+beneficiary_name+TDS_deducted+ADJ_court_order_no+ADJ_court_decision_date+high_court_order_no+high_court_decision_date

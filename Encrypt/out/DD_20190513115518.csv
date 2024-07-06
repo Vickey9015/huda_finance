@@ -1,0 +1,6 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,50000.00,Apurva,GURGAON,0540,,,,,,,DE06A5A98DF7,,,,,,,,,,,200999095333,
+C,D,43-56,Panvel-Vashi,25-74,07/12/2006,31-23,09/02/2011,6-34,29/01/2016,1 823,03/10/2016,,DE06A5A98DF7,Priya Gaonkar-PADMA,EASPS6943C,100000.00,50000.00,50000.00,N,,,,,,
+P,D,10538451,100000.00,Souman,NEW DELHI
+,0005,,,,,,,DBA41144BCA0,,,,,,,,,,,200999095333,
+C,D,25-89,GOA-NASHIK,59-45,07/12/2007,49-34,11/05/2012,11-45,25/05/2017,1 555 519 999,13/11/2018,,DBA41144BCA0,Nitin Sinha-SAI,AUNPS3864M,200000.00,100000.00,100000.00,E,,,,,,

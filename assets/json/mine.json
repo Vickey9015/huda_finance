@@ -1,0 +1,334 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a multitv server Petstore server.",
+        "version": "1.0.0",
+        "title": "Multitv API",
+        "termsOfService": "http://multitvsolution.com/",
+        "contact": {
+            "email": "apiteam@multitvsolution.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "host": "multitvsolution.com",
+    "basePath": "/multitvfinal/api",
+    "tags": [
+        {
+            "name": "user",
+            "description": "Access to User orders",
+            "externalDocs": {
+                "description": "Find out more about our store",
+                "url": "http://swagger.io"
+            }
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/user/edit": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Edit Profile",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "editProfile",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "firstname",
+                        "in": "path",
+                        "description": "The First name that needs to be edit. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lastname",
+                        "in": "path",
+                        "description": "The lastname name that needs to be edit. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "path",
+                        "description": "The phone number that needs to be edit. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pic",
+                        "in": "path",
+                        "description": "The pic (profile Picture) that need to be edit. ",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Logs user into the system",
+                "description": "",
+                "operationId": "loginUser",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "The email for login",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "The password for login in system",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "headers": {
+                            "X-Rate-Limit": {
+                                "type": "integer",
+                                "format": "int32",
+                                "description": "calls per hour allowed by the user"
+                            },
+                            "X-Expires-After": {
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "date in UTC when toekn expires"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid username/password supplied"
+                    }
+                }
+            }
+        },
+        
+        "/user/logout": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Logs out current logged in user session",
+                "description": "",
+                "operationId": "logoutUser",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/user/add": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Add Profile",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "addProfile",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "firstname",
+                        "in": "path",
+                        "description": "The First name of user. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lastname",
+                        "in": "path",
+                        "description": "The lastname of user. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": "The email of user. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "path",
+                        "description": "The phone number of user. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pic",
+                        "in": "path",
+                        "description": "The pic (profile Picture) of user. ",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/user/forgot": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Forgot Password",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "forgotPassword",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": "The email of user. ",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "mail sent"
+                    }
+                }
+            }
+        },
+        "/user/reset": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Reset Password",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "resetPassword",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": "The email of user. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "old_password",
+                        "in": "path",
+                        "description": "Old password of user.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password",
+                        "in": "path",
+                        "description": "New password of user.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "conf_password",
+                        "in": "path",
+                        "description": "Confirm new password of user.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "mail sent"
+                    }
+                }
+            }
+        },
+        "/user/social": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Login With Social Media",
+                "description": "",
+                "operationId": "loginWithSocialMedia",
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "provider",
+                        "in": "path",
+                        "description": "Social Media provider. ",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "social",
+                        "in": "path",
+                        "description": "response array from social media. ",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid username supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        }
+    },
+   
+}

@@ -1,0 +1,5 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,5000.00,Priya Gaonkar,,0540,,,,,,,Q6FEE7E92768,,,,,,,,,,,200999095333,
+C,D,Sector 58,Rewari,25,07/10/2006,31,07/11/2006,,,,,,Q6FEE7E92768,Priyanka Pandey,EASPS6943C,10000.00,5000.00,5000.00,E,,,,,,
+P,D,10538451,4000.00,Gaurang Mhatre,,0005,,,,,,,QB87806E08CE,,,,,,,,,,,200999095333,
+C,D,Sector 59,Delhi,59,07/10/2006,49,07/11/2006,,,,,,QB87806E08CE,Meeta Kpadia,AUNPS3864M,10000.00,6000.00,4000.00,N,,,,,,

@@ -1,0 +1,3 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,229577148.00,ADJ COURT GURGAON,GURGOAN,0540,,,,,,,PD67FC2DC55C,,,,,,,,,,,201002186185,22-08-19
+C,D,88A TO 99A,WAZIRPUR,12-24-14,NO,57,12-23-16,,,,,,PD67FC2DC55C,ADJ COURT GURGAON,N/a,229577148.00,,,N,,,,,,

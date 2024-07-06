@@ -1,0 +1,5 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date,Bank Reference Number/UTR,Transaction Status,Reject Reason
+P,D,10538451,1950.00,Priya Gaonkar GAONKAR,MUMBAI,0006,,,,,,,DF13732584E4,,,,,,,,,,,200999095333,07-01-19,,SUCCESS,SUCCESS
+P,D,10538451,950.00,Priya Gaonkar GAONKAR,MUMBAI,BONP,,,,,,,D7FE08A5E6F4,,,,,,,,,,,200999095333,07-01-19,,SUCCESS,SUCCESS
+P,D,10538451,2950.00,Priya Gaonkar GAONKAR,MUMBAI,BONP,,,,,,,D66F9FE24C70,,,,,,,,,,,200999095333,07-01-19,,SUCCESS,SUCCESS
+P,D,10538451,3800.00,Priya Gaonkar GAONKAR,MUMBAI,0006,,,,,,,D3AB97CB4E3D,,,,,,,,,,,200999095333,07-01-19,,SUCCESS,SUCCESS

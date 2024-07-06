@@ -1,0 +1,5 @@
+Record Identifier,Transaction Type,Customer ID,Transaction Amount,Date of Section 6 Notification (DD-MM-YY),Whether petition filed by the land owner for release of land,Benefirciary Name,Drawee Location,Print Location Name/Code,Beneficiary add line1,Beneficiary add line2,Beneficiary add line3,Beneficiary add line4,Zipcode,Instrument Ref No.,Customer Ref No.,Advising Detail1,Advising Detail2,Advising Detail3,Advising Detail4,Advising Detail5,Advising Detail6,Cheque No.,Instrument Date,MICR No,Bene Email ID,Debit A/C Number,Value Date
+P,D,10538451,10000.00,Purnima Dutta,,0005,,,,,,,RB42A531811D,,,,,,,,,,,200999095333,,,
+C,D,Sector51,Rewari,25,07/12/2006,31,09/01/2011,,,,,,RB42A531811D,Pankaj Katiyar,EASPS6943C,15000.00,5000.00,10000.00,N,,,,,,,,
+P,D,10538451,11000.00,Ashish more,,0540,,,,,,,RE6F2818F190,,,,,,,,,,,200999095333,,,
+C,D,Sector53,Delhi,59,07/12/2008,49,09/01/2013,,,,,,RE6F2818F190,Nitin Sinha,AUNPS3864M,20000.00,9000.00,11000.00,E,,,,,,,,
